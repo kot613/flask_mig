@@ -38,10 +38,11 @@
 <a href="https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-ii-templates">Chapter 2: Templates</a>       
 <a href="https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-iii-web-forms">Chapter 3: Web Forms</a>       
 <a href="https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-iv-database">Chapter 4: Database</a>       
-<a href="https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-v-user-logins">Chapter 5: User Logins</a>
+<a href="https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-v-user-logins">Chapter 5: User Logins</a>        
+<a href="https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-vi-profile-page-and-avatars">Chapter 6: Profile Page and Avatars</a>
     
         
-    Chapter 6: Profile Page and Avatars
+    
     Chapter 7: Error Handling
     Chapter 8: Followers
     Chapter 9: Pagination
