@@ -37,8 +37,10 @@
 <a href="https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world/">Chapter 1: Hello, World!</a>
 
 <a href="https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-ii-templates">Chapter 2: Templates</a>
+
+<a href="https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-iii-web-forms">Chapter 3: Web Forms</a>
     
-    Chapter 3: Web Forms
+    
     Chapter 4: Database
     Chapter 5: User Logins
     Chapter 6: Profile Page and Avatars
