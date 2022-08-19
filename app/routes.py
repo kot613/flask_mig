@@ -57,7 +57,7 @@ def register():
 @app.route('/edit_profile', methods=['GET', 'POST'])
 @login_required
 def edit_profile():
-    form = EditProfileForm()
+    form = EditProfileForm(current_user.username)
     if form.validate_on_submit():
         current_user.username = form.username.data
         current_user.about_me = form.about_me.data
@@ -75,7 +75,6 @@ def edit_profile():
 @app.route('/index')
 @login_required
 def index():
-    user = {'username': 'Miguel'}
     posts = [{'author': {'username': 'John'},
               'body': 'Beautiful day in Portland!'},
              {'author': {'username': 'Susan'},
