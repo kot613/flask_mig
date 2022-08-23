@@ -40,7 +40,13 @@
 <a href="https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-iv-database">Chapter 4: Database</a>       
 <a href="https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-v-user-logins">Chapter 5: User Logins</a>        
 <a href="https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-vi-profile-page-and-avatars">Chapter 6: Profile Page and Avatars</a>     
-<a href="https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-vii-error-handling">Chapter 7: Error Handling</a>
+<a href="https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-vii-error-handling">Chapter 7: Error Handling</a>    
+<a href="https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-viii-followers">Chapter 8: Followers</a>    
+<a href="https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-ix-pagination">Chapter 9: Pagination</a>    
+<a href="https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-x-email-support">Chapter 10: Email Support</a>    
+<a href="https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-xi-facelift">Chapter 11: Facelift</a>    
+<a href="https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-xii-dates-and-times">Chapter 12: Dates and Times</a>    
+<a href="https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-xiii-i18n-and-l10n">Chapter 13: I18n and L10n</a>
  
         
    
