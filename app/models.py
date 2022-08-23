@@ -1,17 +1,17 @@
 from datetime import datetime
+from time import time
 from hashlib import md5
+import jwt
 
 from werkzeug.security import generate_password_hash, check_password_hash
 from flask_login import UserMixin
 
-from app import login
-from app import db
-
+from app import db, app, login
 
 followers = db.Table('followers',
-    db.Column('follower_id', db.Integer, db.ForeignKey('user.id')),
-    db.Column('followed_id', db.Integer, db.ForeignKey('user.id'))
-)
+                     db.Column('follower_id', db.Integer, db.ForeignKey('user.id')),
+                     db.Column('followed_id', db.Integer, db.ForeignKey('user.id'))
+                     )
 
 
 class User(UserMixin, db.Model):
@@ -60,6 +60,30 @@ class User(UserMixin, db.Model):
         own = Post.query.filter_by(user_id=self.id)
         return followed.union(own).order_by(Post.timestamp.desc())
 
+    def get_reset_password_token(self, expires_in=600):
+        """
+        повертає маркер JWT, який генерується безпосередньо функцією jwt.encode().
+        """
+        return jwt.encode(
+            {'reset_password': self.id, 'exp': time() + expires_in},
+            app.config['SECRET_KEY'], algorithm='HS256')
+
+    @staticmethod
+    def verify_reset_password_token(token):
+        """
+        Метод бере маркер і намагається його декодувати, викликаючи функцію jwt.decode() PyJWT.
+        Якщо маркер не можна перевірити або термін його дії минув, буде створено виняток, а потім повертається None абоненту.
+        Якщо маркер дійсний, значення ключа reset_password із корисного навантаження маркера є ідентифікатором користувача,
+         тому я можу завантажити користувача та повернути його.
+        """
+
+        try:
+            id = jwt.decode(token, app.config['SECRET_KEY'],
+                            algorithms=['HS256'])['reset_password']
+        except:
+            return
+        return User.query.get(id)
+
 
 class Post(db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -74,6 +98,3 @@ class Post(db.Model):
 @login.user_loader
 def load_user(id_db):
     return User.query.get(int(id_db))
-
-
-
