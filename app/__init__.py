@@ -25,7 +25,7 @@ login.login_message = _l('Please log in to access this page.')
 mail = Mail(app)
 bootstrap = Bootstrap(app)
 moment = Moment(app)
-babel = Babel(app)
+babel = Babel(app, default_locale='uk')
 
 from app import routes, models, errors
 
@@ -44,10 +44,12 @@ if not app.debug:
     app.logger.info('Blog startup')
 
 
-@babel.localeselector
-def get_locale():
-    # return request.accept_languages.best_match(app.config['LANGUAGES'])
-    return 'uk'
+# @babel.localeselector
+# def get_locale(lang=None):
+#     if lang:
+#         return lang
+#     # return request.accept_languages.best_match(app.config['LANGUAGES'])
+#     return 'en'
 
 
 
