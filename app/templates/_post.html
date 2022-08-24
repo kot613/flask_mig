@@ -9,9 +9,9 @@
             <a href="{{ url_for('user', username=post.author.username) }}">
                 {{ post.author.username }}
             </a>
-            said [{{ moment(post.timestamp).format('LLL') }}]:
+            {{ _('said') }} {{ moment(post.timestamp).format('LLL') }}:
             <br>
-            {{ post.body }}
+            {{ _(post.body) }}
         </td>
     </tr>
 </table>
