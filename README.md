@@ -46,18 +46,9 @@
 <a href="https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-x-email-support">Chapter 10: Email Support</a>    
 <a href="https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-xi-facelift">Chapter 11: Facelift</a>    
 <a href="https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-xii-dates-and-times">Chapter 12: Dates and Times</a>    
-<a href="https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-xiii-i18n-and-l10n">Chapter 13: I18n and L10n</a>
- 
-        
+<a href="https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-xiii-i18n-and-l10n">Chapter 13: I18n and L10n</a>    
+<a href="https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-xv-a-better-application-structure">Chapter 14: A Better Application Structure</a>       
    
-    Chapter 8: Followers
-    Chapter 9: Pagination
-    Chapter 10: Email Support
-    Chapter 11: Facelift
-    Chapter 12: Dates and Times
-    Chapter 13: I18n and L10n
-    Chapter 14: Ajax
-    Chapter 15: A Better Application Structure
     Chapter 16: Full-Text Search
     Chapter 17: Deployment on Linux
     Chapter 18: Deployment on Heroku

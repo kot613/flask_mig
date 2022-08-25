@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-08-24 09:34+0300\n"
+"POT-Creation-Date: 2022-08-26 00:03+0300\n"
 "PO-Revision-Date: 2022-08-24 02:56+0300\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: uk\n"
@@ -19,154 +19,142 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.10.3\n"
 
-#: app/__init__.py:24
+#: app/__init__.py:18
 msgid "Please log in to access this page."
 msgstr "Будь ласка, увійдіть, щоб отримати доступ до цієї сторінки."
 
-#: app/email.py:28
-msgid "[Блог невідомий] Reset Your Password"
-msgstr "[Блог невідомий] Скинути пароль"
-
-#: app/forms.py:10 app/forms.py:17 app/forms.py:36
+#: app/auth/forms.py:10 app/auth/forms.py:17 app/forms.py:10
+#: app/main/forms.py:10
 msgid "Username"
 msgstr "Ім'я користувача"
 
-#: app/forms.py:11 app/forms.py:19 app/forms.py:66
-msgid "Password"
-msgstr "Пароль"
-
-#: app/forms.py:12
-msgid "Remember Me"
-msgstr "Пам'ятай мене"
-
-#: app/forms.py:13 app/routes.py:36 app/templates/login.html:5
-msgid "Sign In"
-msgstr "Увійти"
-
-#: app/forms.py:18 app/forms.py:61
-msgid "Email"
-msgstr "Електронна пошта"
-
-#: app/forms.py:21 app/forms.py:68
-msgid "Repeat Password"
-msgstr "Повторіть пароль"
-
-#: app/forms.py:22 app/routes.py:57 app/templates/register.html:5
-msgid "Register"
-msgstr "Зареєструватися"
-
-#: app/forms.py:27 app/forms.py:48
-msgid "Please use a different username."
-msgstr "Використовуйте інше ім'я користувача."
-
-#: app/forms.py:32
-msgid "Please use a different email address."
-msgstr "Використовуйте іншу електронну адресу."
-
-#: app/forms.py:37
+#: app/forms.py:11 app/main/forms.py:11
 msgid "About me"
 msgstr "Про мене"
 
-#: app/forms.py:38 app/forms.py:52 app/forms.py:57
+#: app/forms.py:12 app/forms.py:26 app/forms.py:31 app/main/forms.py:12
+#: app/main/forms.py:26 app/main/forms.py:31
 msgid "Submit"
 msgstr "Надіслати"
 
-#: app/forms.py:56
+#: app/auth/forms.py:27 app/forms.py:22 app/main/forms.py:22
+msgid "Please use a different username."
+msgstr "Використовуйте інше ім'я користувача."
+
+#: app/forms.py:30 app/main/forms.py:30
 msgid "Say something"
 msgstr "Скажи що-небудь"
 
-#: app/forms.py:62 app/forms.py:69
+#: app/auth/email.py:8
+#, fuzzy
+msgid "[Mblog] Reset Your Password"
+msgstr "Скинути пароль"
+
+#: app/auth/forms.py:11 app/auth/forms.py:19 app/auth/forms.py:41
+msgid "Password"
+msgstr "Пароль"
+
+#: app/auth/forms.py:12
+msgid "Remember Me"
+msgstr "Пам'ятай мене"
+
+#: app/auth/forms.py:13 app/auth/routes.py:28 app/templates/auth/login.html:5
+msgid "Sign In"
+msgstr "Увійти"
+
+#: app/auth/forms.py:18 app/auth/forms.py:36
+msgid "Email"
+msgstr "Електронна пошта"
+
+#: app/auth/forms.py:21 app/auth/forms.py:43
+msgid "Repeat Password"
+msgstr "Повторіть пароль"
+
+#: app/auth/forms.py:22 app/auth/routes.py:49
+#: app/templates/auth/register.html:5
+msgid "Register"
+msgstr "Зареєструватися"
+
+#: app/auth/forms.py:32
+msgid "Please use a different email address."
+msgstr "Використовуйте іншу електронну адресу."
+
+#: app/auth/forms.py:37 app/auth/forms.py:44
 msgid "Request Password Reset"
 msgstr "Запит на скидання пароля"
 
-#: app/routes.py:29
+#: app/auth/routes.py:21
 msgid "Invalid username or password"
 msgstr "Неправильне ім'я користувача або пароль"
 
-#: app/routes.py:55
+#: app/auth/routes.py:47
 msgid "Congratulations, you are now a registered user!"
 msgstr "Вітаємо, тепер ви зареєстрований користувач!"
 
-#: app/routes.py:68
-msgid "Your changes have been saved."
-msgstr "Ваші зміни збережено."
-
-#: app/routes.py:73
-msgid "Edit Profile"
-msgstr "Редагувати профіль"
-
-#: app/routes.py:85
-msgid "Your post is now live!"
-msgstr "Ваша публікація опублікована!"
-
-#: app/routes.py:93
-msgid "Home"
-msgstr "Додому"
-
-#: app/routes.py:114 app/routes.py:134
-msgid "User "
-msgstr "Користувача "
-
-#: app/routes.py:114 app/routes.py:134
-msgid " not found."
-msgstr " не знайдено."
-
-#: app/routes.py:117
-msgid "You cannot follow yourself!"
-msgstr "Ви не можете слідкувати за собою!"
-
-#: app/routes.py:121
-msgid "You are following "
-msgstr "Ви стежите за "
-
-#: app/routes.py:137
-msgid "You cannot unfollow yourself!"
-msgstr "Ви не можете стежити за собою!"
-
-#: app/routes.py:141
-msgid "You are not following  "
-msgstr "Ви не стежите за "
-
-#: app/routes.py:153 app/templates/base.html:22
-msgid "Explore"
-msgstr "Огляд"
-
-#: app/routes.py:161 app/templates/base.html:31
-msgid "Users"
-msgstr "Користувачі"
-
-#: app/routes.py:173
+#: app/auth/routes.py:61
 msgid "Check your email for the instructions to reset your password"
 msgstr "Перевірте свою електронну пошту, щоб отримати інструкції щодо зміни пароля"
 
-#: app/routes.py:175 app/templates/reset_password_request.html:5
+#: app/auth/routes.py:63 app/templates/auth/reset_password_request.html:5
 msgid "Reset Password"
 msgstr "Скинути пароль"
 
-#: app/routes.py:189
+#: app/auth/routes.py:77
 #, fuzzy
 msgid "Your password has been reset."
 msgstr "Ваші зміни збережено."
 
-#: app/routes.py:197
+#: app/main/routes.py:27
+msgid "Your post is now live!"
+msgstr "Ваша публікація опублікована!"
+
+#: app/main/routes.py:35
+msgid "Home"
+msgstr "Додому"
+
+#: app/main/routes.py:60
+msgid "Your changes have been saved."
+msgstr "Ваші зміни збережено."
+
+#: app/main/routes.py:65 app/templates/edit_profile.html:5
+msgid "Edit Profile"
+msgstr "Редагувати профіль"
+
+#: app/main/routes.py:75 app/main/routes.py:95
+msgid "User "
+msgstr "Користувача "
+
+#: app/main/routes.py:75 app/main/routes.py:95
+msgid " not found."
+msgstr " не знайдено."
+
+#: app/main/routes.py:78
+msgid "You cannot follow yourself!"
+msgstr "Ви не можете слідкувати за собою!"
+
+#: app/main/routes.py:82
+msgid "You are following "
+msgstr "Ви стежите за "
+
+#: app/main/routes.py:98
+msgid "You cannot unfollow yourself!"
+msgstr "Ви не можете стежити за собою!"
+
+#: app/main/routes.py:102
+msgid "You are not following  "
+msgstr "Ви не стежите за "
+
+#: app/main/routes.py:116 app/templates/base.html:25
+msgid "Explore"
+msgstr "Огляд"
+
+#: app/main/routes.py:123 app/templates/base.html:38
+msgid "Users"
+msgstr "Користувачі"
+
+#: app/main/routes.py:129
 msgid "Your language - english"
 msgstr "Ваша мова - Мова мужнього і вільного народу"
-
-#: app/templates/404.html:4
-msgid "File Not Found"
-msgstr "Файл не знайдено"
-
-#: app/templates/404.html:5 app/templates/500.html:6
-msgid "Back"
-msgstr "Назад"
-
-#: app/templates/500.html:4
-msgid "An unexpected error has occurred"
-msgstr "Сталася неочікувана помилка"
-
-#: app/templates/500.html:5
-msgid "The administrator has been notified. Sorry for the inconvenience!"
-msgstr "Адміністратора повідомлено. Вибачте за незручності!"
 
 #: app/templates/_post.html:12
 msgid "said"
@@ -176,27 +164,27 @@ msgstr "сказа(-в)(-ла)"
 msgid "Welcome to "
 msgstr "Ласкаво просимо до"
 
-#: app/templates/base.html:18
+#: app/templates/base.html:21
 msgid "Blog"
 msgstr "Блог"
 
-#: app/templates/base.html:25
+#: app/templates/base.html:29
 msgid "Ukraine"
-msgstr ""
+msgstr "Рідна мова моя"
 
-#: app/templates/base.html:26
+#: app/templates/base.html:32
 msgid "English"
-msgstr ""
+msgstr "Англійська"
 
-#: app/templates/base.html:28
+#: app/templates/base.html:35
 msgid "Login"
 msgstr "Війти"
 
-#: app/templates/base.html:30
+#: app/templates/base.html:37
 msgid "Profile"
 msgstr "Профіль"
 
-#: app/templates/base.html:32
+#: app/templates/base.html:39
 msgid "Logout"
 msgstr "Вийти"
 
@@ -213,26 +201,6 @@ msgstr "Новіші публікації"
 #: app/templates/users.html:43
 msgid "Older posts"
 msgstr "Старіші дописи"
-
-#: app/templates/login.html:13
-msgid "Forgot Your Password?"
-msgstr "Забули свій пароль?"
-
-#: app/templates/login.html:14
-msgid "Click to Reset It"
-msgstr "Натисніть, щоб скинути його"
-
-#: app/templates/login.html:16
-msgid "New User?"
-msgstr "Новий користувач?"
-
-#: app/templates/login.html:16
-msgid "Click to Register!"
-msgstr "Натисніть, щоб зареєструватися!"
-
-#: app/templates/reset_password.html:5
-msgid "Reset Your Password"
-msgstr "Скинути пароль"
 
 #: app/templates/user.html:8 app/templates/users.html:11
 msgid "User:"
@@ -253,4 +221,53 @@ msgstr "слідкуешь"
 #: app/templates/user.html:13 app/templates/users.html:16
 msgid "Edit your profile"
 msgstr "Відредагуйте свій профіль"
+
+#: app/templates/user.html:18 app/templates/users.html:21
+#, fuzzy
+msgid "Follow"
+msgstr "Стежити"
+
+#: app/templates/users.html:27
+#, fuzzy
+msgid "Unfollow"
+msgstr "Не стежити"
+
+#: app/templates/auth/login.html:13
+msgid "Forgot Your Password?"
+msgstr "Забули свій пароль?"
+
+#: app/templates/auth/login.html:14
+msgid "Click to Reset It"
+msgstr "Натисніть, щоб скинути його"
+
+#: app/templates/auth/login.html:16
+msgid "New User?"
+msgstr "Новий користувач?"
+
+#: app/templates/auth/login.html:16
+msgid "Click to Register!"
+msgstr "Натисніть, щоб зареєструватися!"
+
+#: app/templates/auth/reset_password.html:5
+msgid "Reset Your Password"
+msgstr "Скинути пароль"
+
+#: app/templates/errors/404.html:4
+msgid "File Not Found"
+msgstr "Файл не знайдено"
+
+#: app/templates/errors/404.html:5 app/templates/errors/500.html:6
+msgid "Back"
+msgstr "Назад"
+
+#: app/templates/errors/500.html:4
+msgid "An unexpected error has occurred"
+msgstr "Сталася неочікувана помилка"
+
+#: app/templates/errors/500.html:5
+msgid "The administrator has been notified. Sorry for the inconvenience!"
+msgstr "Адміністратора повідомлено. Вибачте за незручності!"
+
+#~ msgid "[Блог невідомий] Reset Your Password"
+#~ msgstr "[Блог невідомий] Скинути пароль"
 
