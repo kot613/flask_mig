@@ -446,6 +446,7 @@ ul.right_icon li img {
 .search {
      padding: 24px 0;
      text-align: right;
+     margin-left: 10%;
 }
 
 .form_sea {
@@ -916,3 +917,20 @@ position: absolute;
 
 /** end contact section **/
 
+
+.dropdown{
+     background: #183661;
+     font-weight: 500;
+     font-size: 18px;
+     width: 120%;
+     height: 120%;
+     color: #fff;
+     transition: ease-in all 0.5s;
+     border-radius: 5px;
+}
+
+.dropdown:hover {
+     background: #f2c119;
+     transition: ease-in all 0.5s;
+     color: #000000;
+}

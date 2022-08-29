@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-08-29 04:54+0300\n"
+"POT-Creation-Date: 2022-08-29 15:58+0300\n"
 "PO-Revision-Date: 2022-08-24 02:56+0300\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: uk\n"
@@ -152,9 +152,21 @@ msgstr "Огляд"
 msgid "Users"
 msgstr "Користувачі"
 
-#: app/main/routes.py:129
+#: app/main/routes.py:128
 msgid "Your language - english"
 msgstr "Ваша мова - Мова мужнього і вільного народу"
+
+#: app/templates/_.html:86 app/templates/base.html:110
+msgid "Language"
+msgstr "Мова"
+
+#: app/templates/_.html:88 app/templates/base.html:114
+msgid "English"
+msgstr "Англійська"
+
+#: app/templates/_.html:89 app/templates/base.html:116
+msgid "Ukraine"
+msgstr "Ріднесенька"
 
 #: app/templates/_pagination.html:7
 msgid "Older"
@@ -188,31 +200,24 @@ msgstr "Профіль"
 msgid "Logout"
 msgstr "Вийти"
 
-#: app/templates/base.html:109 app/templates/base.html:111
-msgid "English"
-msgstr "Англійська"
-
-#: app/templates/base.html:112
-msgid "Ukraine"
-msgstr "Рідна мова моя"
-
-#: app/templates/base.html:153
+#: app/templates/base.html:160
 msgid "Lyuili-lyuli-lyuli…"
 msgstr "Люлі- люлі- люлі.... Ей...."
 
-#: app/templates/base.html:154
+#: app/templates/base.html:161
 msgid ""
 "Stefania, mama, mama, Stefania\n"
 "                            The field is in bloom, but her hair is "
 "turning grey\n"
 "                            Sing me a lullaby, mama\n"
 "                            I want to hear your dearest words again..."
-msgstr "Стефанія мамо мамо Стефанія\n"
+msgstr ""
+"Стефанія мамо мамо Стефанія\n"
 "Розквітає поле, а вона сивіє\n"
 "Заспівай мені мамо колискову\n"
 "Хочу ще почути твоє рідне слово\n"
 
-#: app/templates/base.html:166
+#: app/templates/base.html:173
 msgid "All Rights Reserved. Design by "
 msgstr "Всі права захищені. Дизайн від"
 

@@ -101,25 +101,27 @@
                             </div>
                         </nav>
                     </div>
-                    <div class="col-md-4 ">
-                        <div class="search">
-                            <form action="{{ url_for('main.language') }}" method="post">
-                                <div class="select-box">
-                                    <label for="select-box1" class="label select-box1"><span
-                                            class="label-desc">{{_('Language')}}</span> </label>
-                                    <select id="select-box1" class="select" name="lang">
-                                        <option value="en">{{_('English')}}</option>
-                                        <option value="uk">{{_("Ukraine")}}</option>
-                                    </select>
-                                    <button>Get</button>
-                                </div>
 
-                            </form>
+
+                    <div class="search">
+                            <button class="dropdown dropdown-toggle" type="button" id="dropdownMenuButton"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                {{ _('Language') }}
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="{{ url_for('main.language', lang='en') }}"><img src="{{ url_for('static', filename='image_icon/english.png')}}"
+                                                                                                               alt="">{{
+                                    _('English')}}</a>
+                                <a class="dropdown-item" href="{{ url_for('main.language', lang='uk') }}"><img src="{{ url_for('static', filename='image_icon/ukraine.png')}}"
+                                                                                                               alt="">{{
+                                    _('Ukraine')}}</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
     </div>
 </header>
 {% endblock %}
@@ -167,7 +169,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <p>© {{ moment().format('YYYY') }} {{ _("All Rights Reserved. Design by ") }}<a href="#">KotiCo</a>
+                        <p>© {{ moment().format('YYYY') }} {{ _("All Rights Reserved. Design by ") }}<a
+                                href="#">KotiCo</a>
                         </p>
                     </div>
                 </div>

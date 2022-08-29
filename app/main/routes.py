@@ -122,9 +122,8 @@ def users():
     return render_template('users.html', title=_('Users'), users=users, form=form)
 
 
-@bp.route('/language', methods=['GET', 'POST'])
-def language():
-    select = request.form.get('lang')
-    current_app.config['BABEL_DEFAULT_LOCALE'] = select
+@bp.route('/language/<lang>', methods=['GET', 'POST'])
+def language(lang=None):
+    current_app.config['BABEL_DEFAULT_LOCALE'] = lang
     flash(_('Your language - english'))
     return redirect(url_for('main.index'))
