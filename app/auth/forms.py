@@ -34,11 +34,11 @@ class RegistrationForm(FlaskForm):
 
 class ResetPasswordRequestForm(FlaskForm):
     email = StringField(_l('Email'), validators=[DataRequired(), Email()])
-    submit = SubmitField(_l('Request Password Reset'))
+    submit = SubmitField(_l('Reset'))
 
 
 class ResetPasswordForm(FlaskForm):
     password = PasswordField(_l('Password'), validators=[DataRequired()])
     password2 = PasswordField(
         _l('Repeat Password'), validators=[DataRequired(), EqualTo('password')])
-    submit = SubmitField(_l('Request Password Reset'))
+    submit = SubmitField(_l('Reset'))

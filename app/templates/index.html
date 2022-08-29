@@ -2,10 +2,26 @@
 {% import 'bootstrap/wtf.html' as wtf %}
 
 {% block app_content %}
-<h1>{{ _('Hi, ') }}{{ current_user.username }}!</h1>
+{% if current_user.is_authenticated %}
+<div class="row">
+    <div class="col-md-12">
+        <div class="titlepage">
+            <h2>{{ _('Hi, ') }}
+                <span class="blodark">{{ current_user.username }}</span>!</h2>
+{% else %}
+            <h2>{{ _('Message from users:') }}</h2>
+        </div>
+    </div>
+</div>
+{% endif %}
 
 {% if form %}
-{{ wtf.quick_form(form) }}
+<form class="form form-horizontal" method="post" role="form">
+            {{ form.hidden_tag() }}
+            {{ wtf.form_errors(form, hiddens="only") }}
+            {{ wtf.form_field(form.post) }}
+            {{ wtf.form_field(form.submit, class='send_btn') }}
+        </form>
 <br>
 {% endif %}
 
@@ -13,15 +29,5 @@
 {% include '_post.html' %}
 {% endfor %}
 
-<nav aria-label="...">
-    <ul class="pager">
-        <li class="previous{% if not prev_url %} disabled{% endif %}">
-            <a href="{{ prev_url or '#' }}"><span aria-hidden="true">&larr;</span> {{ _('Newer posts') }}</a>
-        </li>
-        <li class="next{% if not next_url %} disabled{% endif %}">
-            <a href="{{ next_url or '#' }}">{{ _('Older posts') }} <span aria-hidden="true">&rarr;</span></a>
-        </li>
-    </ul>
-</nav>
-
+{% include '_pagination.html' %}
 {% endblock %}
